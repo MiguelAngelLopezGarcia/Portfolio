@@ -1,0 +1,18 @@
+<main class="box-border px-4 pt-14 pb-0 w-full min-h-[1848px] max-md:px-5 max-md:pt-10 max-md:pb-0 max-sm:px-4 max-sm:pt-6 max-sm:pb-0 bg-gradient-to-r from-[#0b0b2b] to-[#26105d]">
+  <app-portfolio-header></app-portfolio-header>
+
+  <section class="w-full max-w-[1222px] mx-auto">
+    <app-project-card
+      *ngFor="let project of projects"
+      [title]="project.title"
+      [description]="project.description"
+      [buttonText]="project.buttonText"
+      [previewText]="project.previewText"
+      [technologies]="project.technologies"
+      [backgroundButton]="project.backgroundButton"
+      class="block mb-16 max-md:mb-12 max-sm:mb-8">
+    </app-project-card>
+  </section>
+
+  <app-portfolio-footer></app-portfolio-footer>
+</main>

@@ -1,0 +1,25 @@
+<article class="flex relative mx-auto mt-0 w-full rounded-2xl border border-solid shadow-2xl backdrop-blur-sm bg-slate-800 border-blue-950 h-[382px] max-w-[1222px] max-md:flex-col max-md:p-8 max-md:h-auto max-sm:p-6 mb-15">
+  <div class="flex flex-col flex-1 pt-20 pr-0 pb-0 pl-8 max-md:p-0 max-md:mb-6">
+    <h2 class="mb-5 text-3xl font-bold leading-9 text-white max-sm:mb-4 max-sm:text-2xl max-sm:leading-7">
+      {{ title }}
+    </h2>
+    <p class="mb-5 w-full text-base leading-7 max-w-[546px] text-slate-400 max-sm:mb-4 max-sm:text-sm max-sm:leading-6">
+      {{ description }}
+    </p>
+    <div class="flex gap-4 mb-5 max-sm:flex-col max-sm:gap-3">
+      <button class="h-12 text-base font-bold leading-6 text-center text-white rounded-lg shadow-md cursor-pointer w-[146px] max-sm:w-full {{ backgroundButton }}">
+        {{ buttonText }}
+      </button>
+    </div>
+    <div class="flex flex-wrap gap-3 max-md:gap-2 max-sm:gap-1.5">
+      <span
+        *ngFor="let tech of technologies"
+        class="px-3 py-0 h-7 text-sm leading-5 bg-blue-950 rounded-[33554400px] text-slate-400 max-sm:px-2 max-sm:py-0 max-sm:text-xs">
+        {{ tech }}
+      </span>
+    </div>
+  </div>
+  <div class="shrink-0 mt-8 mr-8 mb-0 ml-0 text-2xl font-semibold leading-8 text-center text-white rounded-xl shadow-2xl h-[316px] w-[562px] max-md:m-0 max-md:w-full max-md:h-60 max-md:text-xl max-sm:text-lg max-sm:h-[200px] flex items-center justify-center">
+    {{ previewText }}
+  </div>
+</article>
