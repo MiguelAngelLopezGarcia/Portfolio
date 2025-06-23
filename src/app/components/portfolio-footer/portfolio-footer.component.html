@@ -1,8 +1,48 @@
 <footer class="flex flex-col gap-4 justify-center items-center mx-auto my-0 w-full border-t border-solid border-t-blue-950 h-[149px] max-w-[1222px] max-md:px-0 max-md:py-8 max-md:h-auto max-sm:px-0 max-sm:py-6">
   <p class="text-base leading-6 text-center text-slate-400 max-sm:text-sm">
-    Ready to collaborate on your next project?
+    ¿Preparado/a para empezar tu próximo proyecto?
   </p>
-  <button class="text-lg font-bold leading-7 text-center text-white rounded-lg shadow-md cursor-pointer h-[60px] w-[172px] max-sm:w-full max-sm:text-base max-sm:max-w-[200px] flex items-center justify-center">
-    Get In Touch
-  </button>
+  <p class="text-lg font-bold leading-7 text-center text-white rounded-lg shadow-md h-[60px] w-[172px] max-sm:w-full max-sm:text-base max-sm:max-w-[200px] flex items-center justify-center">
+    Contacta conmigo
+  </p>
+  <div>
+     <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/miguel-angel-lopez-garcia-40514310b/"
+            target="_blank"
+            class="text-white transition hover:opacity-75"
+          >
+            <span class="sr-only">Linkedin</span>
+
+            <fa-icon size="2x" [icon]="faLinkedin"></fa-icon>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="mailto:malg1992@gmail.com"
+            class="text-white transition hover:opacity-75"
+
+          >
+            <span class="sr-only">Email</span>
+
+            <fa-icon size="2x" [icon]="faEnvelope"></fa-icon>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/MiguelAngelLopezGarcia"
+            target="_blank"
+            class="text-white transition hover:opacity-75"
+          >
+            <span class="sr-only">GitHub</span>
+
+            <fa-icon size="2x" [icon]="faGithub"></fa-icon>
+          </a>
+        </li>
+
+      </ul>
+  </div>
 </footer>

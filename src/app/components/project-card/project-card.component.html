@@ -1,17 +1,16 @@
 <article
-  class="flex relative mx-auto mt-0 w-full rounded-2xl border border-solid shadow-2xl backdrop-blur-sm bg-slate-800 border-blue-950 h-[382px] max-w-[1222px] max-md:flex-col max-md:p-15 max-md:pb-20 max-md:h-auto max-sm:p-10 max-sm:pb-25 mb-15"
+  class="flex items-center justify-between relative mx-auto mt-0 w-full rounded-2xl border border-solid shadow-2xl backdrop-blur-sm bg-slate-800 border-blue-950 max-w-[1222px] max-md:flex-col max-md:p-15 max-md:pb-20 max-md:h-auto max-sm:p-10 max-sm:pb-25 mb-15"
 >
-  <div class="flex flex-col flex-1 pt-20 pr-0 pb-0 pl-8 max-md:p-0 max-md:mb-6">
+  <div class="flex flex-col flex-1 py-5 pr-0 pb-0 pl-8 max-md:p-0 max-md:mb-6">
     <h2
       class="mb-5 text-3xl font-bold leading-9 text-white max-sm:mb-4 max-sm:text-2xl max-sm:leading-7"
     >
       {{ title }}
     </h2>
     <p
+      [innerHTML]="safeText"
       class="mb-5 w-full text-base leading-7 max-w-[546px] text-slate-400 max-sm:mb-4 max-sm:text-sm max-sm:leading-6"
-    >
-      {{ description }}
-    </p>
+    ></p>
     <div class="flex gap-4 mb-5 max-sm:flex-col max-sm:gap-3">
       <a
         href="{{ link }}"
@@ -21,10 +20,10 @@
           backgroundButton
         }}"
       >
-        {{ buttonText }}
+        Visitar proyecto
       </a>
     </div>
-    <div class="flex flex-wrap gap-3 max-md:gap-2 max-sm:gap-1.5">
+    <div class="flex flex-wrap gap-3 max-md:gap-2 max-sm:gap-1.5 mb-5">
       <span
         *ngFor="let tech of technologies"
         class="px-3 py-0 h-7 text-sm leading-5 bg-blue-950 rounded-[33554400px] text-slate-400 max-sm:px-2 max-sm:py-0 max-sm:text-xs"
@@ -34,7 +33,7 @@
     </div>
   </div>
   <div
-    class="shrink-0 mt-8 mr-8 mb-0 ml-0 text-2xl font-semibold leading-8 text-center text-white rounded-xl shadow-2xl h-[316px] w-[562px] max-md:m-0 max-md:w-full max-md:h-60 max-md:text-xl max-sm:text-lg max-sm:h-[200px] flex items-center justify-center"
+    class="shrink-0 mt-8 mr-8 mb-0 ml-0 text-2xl font-semibold leading-8 text-center text-white rounded-xl shadow-2xl w-[562px] md:mb-5 max-md:m-0 max-md:w-full max-md:text-xl max-sm:text-lg flex items-center justify-center"
   >
     <iframe
       width="560"

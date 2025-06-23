@@ -6,8 +6,6 @@ import { ProjectCardComponent } from '../../components/project-card/project-card
 interface Project {
   title: string;
   description: string;
-  buttonText: string;
-  previewText: string;
   technologies: string[];
   backgroundButton: string;
   link: string;
@@ -35,36 +33,32 @@ interface Project {
 export class PortfolioComponent {
   projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Mockvet',
       description:
-        'A modern e-commerce solution built with cutting-edge technology, featuring seamless user experience and robust backend architecture.',
-      buttonText: 'Visit Website',
-      previewText: 'E-Commerce Preview',
-      technologies: ['React', 'Node.js', 'MongoDB'],
+        'Página web para la intranet de una clínica veterinaria, con funcionalidades de gestión de citas y administración de pacientes y mascotas. La contraseña para todos los usuarios es "123456" \n <strong>Administrador</strong>: super@usuario.com \n <strong>Trabajador</strong>: auxiliar@usuario.com',
+      technologies: ['Angular', 'TypeScript', 'Tailwind', 'DaisyUi', 'Supabase', 'PostgreSQL'],
       backgroundButton:
         'bg-gradient-to-r from-[#a855f7] to-[#6366f1] hover:opacity-90',
       link: 'https://mockvet.netlify.app/',
       videoLink: 'https://www.youtube.com/embed/yOM3JVMddOU?si=_kwlU2GRNMbtCy31',
     },
     {
-      title: 'Mobile App Dashboard',
+      title: 'B25ConvElectro',
       description:
-        'An intuitive mobile application dashboard with real-time analytics, beautiful data visualizations, and seamless user interactions.',
-      buttonText: 'Visit Website',
-      previewText: 'Mobile Dashboard Preview',
-      technologies: ['Flutter', 'Firebase', 'Chart.js'],
+        'Página web para que los alumnos del instituto suban documentos para que luego un administrador los valide. Incluye un sistema de autenticación y una base de datos para almacenar los documentos y sus estados de validación. La contraseña para todos los usuarios es "123456" \n <strong>Super Administrador</strong>: super@usuario.com \n <strong>Administrador</strong>: super@usuario.com \n <strong>Usuario</strong>: ejemplo@test.com',
+
+      technologies: ['Angular', 'TypeScript', 'Tailwind', 'DaisyUi', 'Supabase', 'PostgreSQL'],
       backgroundButton:
         'bg-gradient-to-r from-[#ec4795] to-[#f43f5e] hover:opacity-90',
       link: 'https://conv-electro.netlify.app/',
       videoLink: 'https://www.youtube.com/embed/yOM3JVMddOU?si=_kwlU2GRNMbtCy31',
     },
     {
-      title: 'AI-Powered SaaS',
+      title: 'Store Manager',
       description:
-        'A sophisticated SaaS platform leveraging artificial intelligence to provide automated solutions and intelligent insights for businesses.',
-      buttonText: 'Visit Website',
-      previewText: 'AI SaaS Preview',
-      technologies: ['Python', 'TensorFlow', 'AWS'],
+        'Concepto de tienda online. Incluye un sistema de autenticación, un modo oscuro, una base de datos para almacenar los productos y las imágenes de los mismos, una funcionalidad para descargar el stock de productos en diferentes formatos y un sistema que envía un correo en caso de stock bajo. La contraseña para todos los usuarios es "123456" \n <strong>Administrador</strong>: super@usuario.com \n <strong>Usuario</strong>: usuario@usuario.com',
+
+      technologies: ['Angular', 'TypeScript', 'Tailwind', 'Flowbite', 'Supabase', 'PostgreSQL'],
       backgroundButton:
         'bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] hover:opacity-90',
       link: 'https://tech-computers.netlify.app/',
