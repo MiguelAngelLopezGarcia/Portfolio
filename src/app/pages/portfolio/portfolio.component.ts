@@ -40,7 +40,7 @@ export class PortfolioComponent {
       backgroundButton:
         'bg-gradient-to-r from-[#a855f7] to-[#6366f1] hover:opacity-90',
       link: 'https://mockvet.netlify.app/',
-      videoLink: 'https://www.youtube.com/embed/yOM3JVMddOU?si=_kwlU2GRNMbtCy31',
+      videoLink: 'https://www.youtube.com/embed/QYpqAwfH2FQ?si=XIJO02oNXCkLozRl',
     },
     {
       title: 'B25ConvElectro',
@@ -62,7 +62,7 @@ export class PortfolioComponent {
       backgroundButton:
         'bg-gradient-to-r from-[#3b82f6] to-[#06b6d4] hover:opacity-90',
       link: 'https://tech-computers.netlify.app/',
-      videoLink: 'https://www.youtube.com/embed/yOM3JVMddOU?si=_kwlU2GRNMbtCy31',
+      videoLink: 'https://www.youtube.com/embed/hK7nm4o8b-8?si=nU5mVfbddgLSbFgN',
     },
   ];
 }
